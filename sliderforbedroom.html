@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="sliderdesign.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+<div class="swiper">
+    
+    <div class="swiper-wrapper">
+     
+      <div class="swiper-slide"><img src="B1.jfif"></div>
+      <div class="swiper-slide"><img src="B2.jfif"></div>
+      <div class="swiper-slide"><img src="B3.jfif"></div>
+      <div class="swiper-slide"><img src="B5.jfif"></div>
+      <div class="swiper-slide"><img src="B6.jfif"></div>
+      <div class="swiper-slide"><img src="B7.jfif"></div>
+      <div class="swiper-slide"><img src="B8.jfif"></div>
+      <div class="swiper-slide"><img src="B9.jfif"></div>
+
+     
+    </div>
+   
+    <div class="swiper-pagination"></div>
+  
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+autoplay:
+{
+    delay:3000,
+    disableonInteraction:false,
+},
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+        </script>
+    </body>
+</html>
